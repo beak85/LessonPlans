@@ -1,0 +1,56 @@
+ls 							lists files in a directory
+mkdir [name] 				makes a directory with the name specified
+cd [name] 					changes to that specified directory
+
+Once after installation:
+	git config --global user.name "Your Name"
+	git config --global user.email "your@email.com"
+
+
+git init 					makes the current folder into a repo
+git init [name] 			makes a new folder and initialize it as a repo
+
+git status 	  				shows the status of files in our repo
+
+git add [filename] 			adds a single file to the staging area
+git add . 					adds all modified and new files to the staging area
+
+git commit 					commits changes to the repo. opens text editor for message
+git commit -m "message" 	commits changes to the repo with short message
+
+git log 					shows the commit history
+git log --oneline			shows commits using one line each
+
+git revert HEAD				go back one commit - keeps history
+git reset --hard hash		use rarely - goes back but deletes history
+
+
+------- Second Stage ------------ Remote Files ----------------------------
+
+Put it Online:
+
+Create new repo online at github.com - need to make an account first!
+					
+git remote add origin https://github.com/path/file.git 		(origin is the name everyone uses - could be anything, but use origin!)
+								(use the https address, not SSH)
+														
+git remote							(Shows you the remotes that are configured)														
+																							(
+git push -u origin main			 			(push TO the origin, on the web, from the main, on your PC)
+								(-u is only used the first time!)
+									(-u option automatically sets that upstream for you, linking your repo to the central one.)
+								(That way, in the future, Git "knows" where you want to push to and where you want to pull from)
+
+git push 							(once you have pushed with -u, git remembers and you can just use this instead.)	
+
+git status							(now shows if we are up to date)
+									(look at github repo too)
+
+	--Now our workflow is:
+		Add files and make edits
+		git add .  
+		git commit 
+		git push
+									
+
+
