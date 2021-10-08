@@ -1,0 +1,31 @@
+List Comprehension - fills list as it's created
+
+squares = [ x ** 2 for x in range(10) ]
+print(squares)
+
+row = ["WHITE_PAWN" for i in range(8)]
+print(row)
+
+
+Lets use lists inside lists (along with Comprehension)
+
+board = [[EMPTY for i in range(8)] for j in range(8)]
+
+for i in range(8):
+	board [1][i] = "WHITE_PAWN"
+	board [6][i] = "BLACK_PAWN"
+
+board[0][0] = ROOK
+board[0][7] = ROOK
+board[7][0] = ROOK
+board[7][7] = ROOK
+
+print(board)
+
+for i in range(8):
+    for j in range(8):
+        print (board [i][j], end = "   ")
+    print() 
+
+        
+

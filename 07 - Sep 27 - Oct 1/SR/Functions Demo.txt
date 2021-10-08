@@ -1,0 +1,76 @@
+Decomposition - Breaking problems into small isolated parts
+
+We use functions from Python, it's pre-installed modules, and directly from our code
+
+def functionname():
+	function_body
+	
+def message():
+	print("This is the message.")
+
+print("Start")
+message()
+print("Stop")
+s
+Using Parameters ---
+
+def function(parameter)
+
+
+def message(myNumber):
+	print("The parameter is:", number
+	
+message(7)
+
+
+def greeting(firstName, lastName):
+	print("Hello,", firstName, lastName
+	
+greeting("Matt", "Geiger")
+greeting(George", "Jetson")
+
+
+Keyword argument passing (vs. positional)
+
+greeting(lastName="Jetson", firstName="George")
+
+
+Returning Results
+
+def hypotenuse(a, b):
+	hyp = (a**2 + b**2) ** .5
+	return hyp
+	
+'None' is a keyword
+	same as null 
+	can't use it in calculations
+	you can assign it to variables
+	*If you don't return anything, it automatically returns 'None'
+	
+You can return anything (including lists!)
+
+PART 2- SCOPE
+
+
+def myFunction(number)
+	print("The variable in my function:", number)
+	
+myFunction(7)
+print("The variable after my function:", number)	
+
+__
+
+
+def myFunction()
+	myVar= 15
+	print("The variable in the function:", myVar)
+	
+myVar = 7	
+myFunction()
+print("The variable after my function:", myVar)	
+
+
+-add global
+
+Use default parameters
+
